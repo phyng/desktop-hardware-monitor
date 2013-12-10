@@ -30,7 +30,7 @@ class WindowsSystemInformationProvider(object):
 
     def get_cpu_temperature(self):
         """Get the CPU temperature in Celsius"""
-        return self.ohm.query("select * from Sensor where Identifier = '/amdcpu/0/temperature/0'")[0].Value; 
+        return self.ohm.query("select * from Sensor where Identifier = '/intelcpu/0/temperature/0'")[0].Value; 
 
 
 class LinuxSystemInformationProvider(object):
